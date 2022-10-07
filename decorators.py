@@ -14,6 +14,7 @@ def decorator(some_function):
 
 # декоратор-логгер с параметром – путь к логам      
 def parameterized_decorator(path_to_file):
+    
     def decorator(some_function):
 
         def new_function(*args, **kwargs):
